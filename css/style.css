@@ -1,3 +1,41 @@
-.navbar-brand {
+.customNav {
+    position: fixed;
+    width: 90%;
+    background-color: transparent;
+    background-size: cover;
+    z-index: 10;
+    margin: 1% 5% 0;
+  }
+  .navbar-nav {
+    margin-left:auto;
+    margin-right: 0 !important;
+  }
+  .nav-item {
+    margin: 0px 15px;
+  }
+  .dropdown-menu {
+    background-color: transparent;
+    background-size: cover;
+  }
+  .customNav a {
+    color: #707070 !important;
+  }
+  .active {
+      border-bottom: 2px solid #6041b4;
+      color: #6041B4;
+  }
+
+  @media (min-width:992px){
+.nav-item .dropdown .active {
+  border: none;
+  background-color: #6041B4;
 
 }
+.active>.nav-link {
+  color: #ffffff;
+}
+
+.nav-item .dropdown .active>li {
+  color: #ffffff;
+}
+  }
