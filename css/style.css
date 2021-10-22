@@ -17,25 +17,34 @@
     background-color: transparent;
     background-size: cover;
   }
-  .customNav a {
-    color: #707070 !important;
-  }
+
   .active {
       border-bottom: 2px solid #6041b4;
       color: #6041B4;
   }
 
+  /*Dropdown Menu items under UX Design navigation*/
+  .dropdown-menu {
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background-color: #f2f2f2;
+  }
+  .dropdown-item a {
+    color: #6041b4 !important;
+  }
+  .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #6041b4;
+  }
+  .dropdown-item:active {
+    color: #606060;
+    background-color: #c7b5f9 !important;
+  }
+
   @media (min-width:992px){
-.nav-item .dropdown .active {
-  border: none;
-  background-color: #6041B4;
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+    
+    }
 
-}
-.active>.nav-link {
-  color: #ffffff;
-}
-
-.nav-item .dropdown .active>li {
-  color: #ffffff;
-}
   }
