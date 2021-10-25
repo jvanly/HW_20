@@ -1,62 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     
 <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
     
     <title>Jackie Ly | Case Study: AI-Travel App</title>
 </head>
 
+
 <body>
-    <nav class="customNav navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><img src="images/jackie-ly-logo.png" alt="Jackie Ly logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  UX Design <span class="sr-only">(current)</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">AI-Travel</a>
-                  <a class="dropdown-item" href="#">Contact</a>
-                </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="container">
+    <div class="row">
+      <nav class="customNav navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html"><img src="images/jackie-ly-logo.png" alt="Jackie Ly logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    UX Design <span class="sr-only">(current)</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">AI-Travel</a>
+                    <a class="dropdown-item" href="#">Yani</a>
+                  </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Jackie</a>
               </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Jackie</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
+              <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact</a>
+                </li>
+            </ul>
+          </div><!-- END navbarNavDropdown -->
+        </nav><!-- END NAV -->
+    </div><!-- END row -->
+  </div><!-- END container -->
 
 
-      <!-- START Hero -->
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <img src=""
-          </div><!-- END column-4 -->
-          <div class="col-8">
+  <!-- START Hero -->
+    <div class="container-fluid" id="hero">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4" id="hero-img">
+            <img src="images/AI-Travel_App-on-mobile.png" >
+        </div><!-- END column-4 -->
 
-          </div><!-- END column-8 -->
-        </div><!-- END row -->
-      </div><!-- END container -->
+        <div class="col-sm-12 col-md-6 col-lg-8">
+          <h1>AI-Travel</h1>
+          <p>AI-Travel App was conceived in hopes of helping travelers make plans that normally takes them between multiple conventional travel reservations platforms and the National Parks System's reservation system. By using AI, to run searches and make the best matches recommendation, you are sure to be on your way to another vacation that requires that elusive permit and availability, often via lottery.</p>
+          <hr class="white-line">
+            <ul id="ai-nav">
+              <li><a href="#summary">Summary</a></li>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#insight">User Insight</a></li>
+              <li><a href="#ideation">Ideation</a></li>
+            </ul>
+        </div><!-- END column-8 -->
+      </div><!-- END row -->
+    </div><!-- END container -->
 
+
+
+<!-- START Summary -->
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-sm-12 col-lg-12">
+      <h2>Summary</h2>
+    </div><!-- END column-12 -->
+  </div><!-- END row -->
+
+  <div class="row">
+    <div class="col-sm-12 col-lg-6">
+      <h3>My Role</h3>
+      <p>UX Designer, UX Researcher, Data Analysis, Information Architecture, Wireframing, Prototyping, User Testing</p>
+    </div><!-- END column-6 -->
+    <div class="col-sm-12 col-lg-6">
+      <h3>Tools Used</h3>
+      <p>Figma, Miro, Photoshop</p>
+    </div><!-- END column-6 -->
+  </div><!-- END row -->
+
+  <div class="row">
+    <div class="col-sm-12 col-lg-6">
+      <h3>The Problem</h3>
+      <p>Vacation planning takes time in which people do not have. Finding time to take a vacation is already difficult, however, winning the lottery for a permit adds to the complexity of planning.</p>
+    </div><!-- END column-6 -->
+    <div class="col-sm-12 col-lg-6">
+      <h3>The Solution</h3>
+      <p>AI-Travel App will provide travel options that fits your desired requirements, ordering them by the most matches to lowest matching.</p>
+    </div><!-- END column-6 -->
+  </div><!-- END row -->
+</div><!-- END container-fluid -->
+
+
+
+<!-- START Research -->
+<div class="container-fluid" id="research">
+  <div class="row">
+    <div class="col-sm-12 col-lg-12">
+      <h2>Research</h2>
+    </div><!-- END column-12 -->
+  </div><!-- END row -->
+
+  <div class="row" class="researches">
+    <div class="col-sm-12 col-md-12 col-lg-4" class="research-title">
+      <h3>Proto Persona</h3>
+    </div><!-- END column-4 -->
+    <div class="col-sm-12 col-md-12 col-lg-8">
+      <img src="images/ai-travel-app-proto-persona-726x330px.jpg">
+    </div><!-- END column-8 -->
+  </div><!-- END row -->
+
+  <div class="row" class="researches">
+    <div class="col-sm-12 col-md-12 col-lg-4" class="research-title">
+      <h3>User Persona</h3>
+    </div><!-- END column-4 -->
+    <div class="col-sm-12 col-md-12 col-lg-8">
+      <img src="images/ai-travel-user-persona-726x350px.jpg">
+    </div><!-- END column-8 -->
+  </div><!-- END row -->
+</div><!-- END container-fluid -->
+
+
+
+<!-- START User Insight -->
+<!-- START Research -->
+<div class="container-fluid" id="insight">
+  <h3>User Insight</h3>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <p>There are many reservation systems and travel websites available to travelers willing and able to do their own planning. For those with less time to travel, they also have less time to plan for a vacation, especially where it requires winning a permit to travel and to camp at popular locations within the American park system.</p>
+      <p>Ed needs a good travel planner who can get him a park permit(s) as well as plane tickets, hotels, and car rentals because of his limited time to travel and less flexible time to travel to remote and distant locations.</p>
+    </div><!-- END column-12 -->
+  </div><!-- END row -->
+</div><!-- END container-fluid -->
+
+
+
+<!-- START Ideation -->
+<div class="container-fluid" id="ideation">
+  <div class="ideation-title">
+      <h2>Ideation</h2>
+  </div><!-- END ideation-title -->
+
+  <div class="row" class="idea">
+    <div class="col-sm-12 col-md-12 col-lg-4" class="ideation-title">
+      <h3>User Flow</h3>
+    </div><!-- END column-4 -->
+    <div class="col-sm-12 col-md-12 col-lg-8">
+      <img src="images/ai-travel-user-flow-726x370.png">
+    </div><!-- END column-8 -->
+  </div><!-- END row -->
+</div><!-- END container-fluid -->
+
+<div id="footer">
+  <footer>
+    <hr class="footer">
+    <p>EMAIL: JACKIEVANLY@VANLY.COM</p>
+    <p>PHONE: 301-802-6995</p>
+    <p>LINKEDIN</p>
+    <hr class="footer">
+  </footer>
+</div>
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<!--Button-->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
 </body>
 
 
