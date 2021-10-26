@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<!-- Script only -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
     
 <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -49,7 +51,7 @@
 
 
   <!-- START Hero -->
-    <div class="container-fluid" id="hero">
+    <div class="container-fluid scroll_to" id="hero">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4" id="hero-img">
             <img src="images/AI-Travel_App-on-mobile.png" >
@@ -72,7 +74,7 @@
 
 
 <!-- START Summary -->
-<div class="container-fluid" id="summary">
+<div class="container-fluid scroll_to" id="summary">
   <div class="row">
     <div class="col-sm-12 col-lg-12">
       <h2>Summary</h2>
@@ -105,14 +107,14 @@
 
 
 <!-- START Research -->
-<div class="container-fluid" id="research">
+<div class="container-fluid scroll_to" id="research">
   <div class="row">
     <div class="col-sm-12 col-lg-12">
       <h2>Research</h2>
     </div><!-- END column-12 -->
   </div><!-- END row -->
 
-  <div class="row" class="researches">
+  <div class="row align-items-center" class="researches">
     <div class="col-sm-12 col-md-12 col-lg-4" class="research-title">
       <h3>Proto Persona</h3>
     </div><!-- END column-4 -->
@@ -121,7 +123,7 @@
     </div><!-- END column-8 -->
   </div><!-- END row -->
 
-  <div class="row" class="researches">
+  <div class="row align-items-center" class="researches">
     <div class="col-sm-12 col-md-12 col-lg-4" class="research-title">
       <h3>User Persona</h3>
     </div><!-- END column-4 -->
@@ -134,7 +136,7 @@
 
 
 <!-- START User Insight -->
-<div class="container text-center" id="insight">
+<div class="container text-center scroll_to" id="insight">
   <div class="row justify-content-center">
     <h3>User Insight</h3>
   </div><!-- END row -->
@@ -160,12 +162,12 @@
 
 
 <!-- START Ideation -->
-<div class="container-fluid" id="ideation">
+<div class="container-fluid scroll_to" id="ideation">
   <div class="ideation-title">
       <h2>Ideation</h2>
   </div><!-- END ideation-title -->
 
-  <div class="row" class="idea">
+  <div class="row align-items-center" class="idea">
     <div class="col-sm-12 col-md-12 col-lg-4" class="ideation-title">
       <h3>User Flow</h3>
     </div><!-- END column-4 -->
@@ -177,7 +179,7 @@
 
 <div id="footer">
   <footer>
-    <hr class="footer">
+    <hr class="footer scroll_to">
     <p>EMAIL: JACKIEVANLY@VANLY.COM</p>
     <p>PHONE: 301-802-6995</p>
     <p>LINKEDIN</p>
@@ -209,6 +211,14 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+    //smooth scroll down the pagedf
+    jQuery('.scroll_to').click(function(e){
+    var jump = $(this).attr('href');
+    var new_position = $(jump).offset();
+    $('html, body').stop().animate({ scrollTop: new_position.top }, 500);
+    e.preventDefault();
+});
     </script>
 
 </body>
